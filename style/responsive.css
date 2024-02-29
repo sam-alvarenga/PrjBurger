@@ -1,0 +1,59 @@
+@media (max-width: 820px) {
+    header nav {
+        /* Para esconder o menu */
+        display: none;
+    }
+
+    header .menu {
+        /* para desktop o menu hambuguer não aparece no css, você esconde com display: none, no responsive voce coloca display:flex para quando for outro dispositivo ele aparecerá   */
+        display: flex;
+    }
+
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero .leftside {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .hero .rigthside {
+        padding-bottom: 50px;
+    }
+
+    .hero .rigthside img {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .search .title {
+        text-align: center;
+    }
+
+    .search .sides {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .products-grid {
+        /* foi criado 2 colunas e pegando 1 fração da tela */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @media (max-width: 500px) {
+        .products-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
